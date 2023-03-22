@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Tiempo Dojo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+
+    <body>
+        
+        <div class="headerBackground">
+            
+            <div id="header">
+               
+                    <h2 id="headerTitle">DojoWeather</h2>
+
+                    <div id="menu">
+                        <p onclick="cityAlert(this)">Burbank</p>
+                        <p onclick="cityAlert(this)">Chicago</p>
+                        <p onclick="cityAlert(this)">Dallas</p>
+                    </div>
+               
+            </div>
+
+        </div>
+
+        <div class="display">
+            <div id="innerDisplay">
+                
+                  
+                <h3 id="cityDisplay">San Jose</h3>
+                
+                <div id="space"></div>
+                
+                <div id="TemperatuDisplay">
+
+                    <p id="titleTemperature">Show temperature in:</p>
+                
+                    <select  id="listTemperature" name="temperature">
+                        <option onclick="changeC()">°C</option>
+                        <option onclick="changeF()">°F</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="linea"></div>
+        
+        
+        <div class="weatherDisplay">
+            
+            <div class="displayToday">
+
+                <h3>Today</h3>
+                <img src="/Users/anacgelvez/Desktop/JS-TiempoDojo/assets/sun.png" alt="">
+                <p>Sunny</p>
+                
+                <div id="todayTem">
+                    <p id="high">°24</p>
+                    <p id="low">°18</p>
+                </div>
+
+            </div>
+
+            <div class="displayTomorrow">
+
+                <h3>Tomorrow</h3>
+                <img src="/Users/anacgelvez/Desktop/JS-TiempoDojo/assets/rain.png" alt="">
+                <p>Rain</p>
+                
+                <div id="tomorrowTem">
+                    <p id="high1">°27</p>
+                    <p id="low1" >°19</p>
+                </div>
+
+            </div>
+
+            <div class="displayFriday">
+
+                <h3>Friday</h3>
+                <img src="/Users/anacgelvez/Desktop/JS-TiempoDojo/assets/clouds.png" alt="">
+                <p>Some clouds</p>
+                
+                <div id="fridayTem">
+                    <p id="high2">°21</p>
+                    <p id="low2">°16</p>
+                </div>
+
+            </div>
+
+            <div class="displaySaturday">
+
+                <h3>Saturday</h3>
+                <img src="/Users/anacgelvez/Desktop/JS-TiempoDojo/assets/sun.png" alt="">
+                <p>Sunny</p>
+                
+                <div id="saturdayTem">
+                    <p id="high3">°26</p>
+                    <p id="low3">°21</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="cookiesDisplay">
+            <div id="cookies2">
+                <div>
+                <img id="cookie" src="/Users/anacgelvez/Desktop/JS-TiempoDojo/assets/cookie.png">
+                </div>
+
+                <div>
+                    <p><strong>Stop! Coockie time</strong></p>
+                    <p id="textCookie">We use cookie (sadly not the edible ones) to personalize content and ads, to provide social media feature and to analyse our traffic. Read more...</p>
+                </div>
+
+                <div>
+                    <button onclick="hideCookies()" id="acceptButton">I accept</button>
+                </div>    
+            </div>
+
+        </div>
+
+
+    </body>
+
+
+</html>
